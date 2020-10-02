@@ -1,0 +1,42 @@
+body { min-height: 100vh; display: flex; flex-direction: column; }
+header{ } 
+main{flex-grow: 1;} 
+footer{ }
+
+/* * {
+  outline: 1px solid black;
+  height: 100px;
+} */
+
+.bg-img {
+  background-image: url("./bg5.jpg");
+  background-size: cover;
+  height: 75vh;
+  background-position: center;
+}
+
+.latte-img {
+  background-image: url("./latte-plant1.jpg");
+  background-size: cover;
+  height: 60vh;
+  background-position: center;
+}
+
+.beans-img {
+  background-image: url("./beans-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.move-down {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  width: 85%;
+}
+
+.height-increase {
+  height: 15vh;
+}
+
+@media 
