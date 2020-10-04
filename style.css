@@ -2,17 +2,37 @@ body { min-height: 100vh; display: flex; flex-direction: column; }
 header{ } 
 main{flex-grow: 1;} 
 footer{ }
+html {
+  scroll-behavior: smooth;
+}
+
 
 /* * {
   outline: 1px solid black;
-  height: 100px;
+
 } */
 
-.bg-img {
-  background-image: url("./bg5.jpg");
-  background-size: cover;
-  height: 75vh;
-  background-position: center;
+@media screen and (min-width: 768px) {
+  .move-down {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'EB Garamond', serif;
+
+}
+
+p {
+  font-family: 'Lora', serif;
+
 }
 
 .latte-img {
@@ -22,21 +42,69 @@ footer{ }
   background-position: center;
 }
 
+.slide {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.bg-img {
+  background-image: url("./bg4.jpg");
+  background-size: cover;
+  height: 75vh;
+  background-position: top;
+}
+
+
+
 .beans-img {
   background-image: url("./beans-bg.jpg");
   background-size: cover;
   background-position: center;
 }
 
-.move-down {
-  position: absolute;
-  top: 20px;
-  left: 30px;
-  width: 85%;
-}
 
 .height-increase {
   height: 15vh;
 }
 
-@media 
+.center-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.line-break {
+  height: 5px;
+  width: 15px;
+  align-self: center;
+}
+
+.cards {
+  height: 60vh;
+}
+
+.reg-card {
+  height: 60%;
+  width: 80%;
+}
+
+.big-card {
+  height: 90%;
+  width: 90%;
+}

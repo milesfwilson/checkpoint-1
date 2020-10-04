@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/e5c7f27a7a.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lora&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -21,7 +22,7 @@
 
     <div class="row mb-5">
       <nav class="col-12 navbar fixed-top navbar-light bg-light">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#hello">
           <div class="d-flex">
             <i class="fas fa-adjust fa-2x pr-3"></i>
             <h3 class="my-auto">Zero Coffee Co.</h3>
@@ -39,7 +40,13 @@
               <input type="email" class="mb-2 form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                 placeholder="Name">
               <input type="email" class="mb-2 form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="Phone">
+                placeholder="Email">
+              <div class="d-flex">
+                <input type="email" class="mb-2 form-control w-50" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="Phone">
+                <input type="email" class="mb-2 form-control w-50 ml-2" id="exampleInputEmail1"
+                  aria-describedby="emailHelp" placeholder="EXT.">
+              </div>
               <input type="email" class="form-control height-increase" id="exampleInputEmail1"
                 aria-describedby="emailHelp" placeholder="Message">
             </div>
@@ -53,8 +60,8 @@
           </form>
         </div>
       </div>
-      <div class="col-md-8 d-none d-md-block">
-        <div class="d-flex text-light pt-5 pl-5">
+      <div class="col-md-8 d-none d-md-block overflow-hidden">
+        <div class="d-flex text-light pt-5 pl-5 slide">
           <i class="fas fa-adjust fa-5x"></i>
           <div class="pl-3">
             <h1>Zero Coffee Company</h1>
@@ -67,7 +74,7 @@
 
   <main>
     <div class="row bg-dark">
-      <div class="col-md-5 col-sm-12">
+      <div class="col-md-5 col-sm-12 order-1 order-md-0">
         <div class="text-light m-5">
 
           <h3>Lorem, ipsum dolor sit amet consectetur adipisicing.</h3>
@@ -76,16 +83,16 @@
             deserunt, nostrum minima, eligendi laborum ea ut doloribus debitis eos.</p>
         </div>
       </div>
-      <div class="col-md-7 col-sm-12 bg-light text-dark p-4">
-        <div class="move-down bg-light shadow-lg pt-4">
+      <div class="col-md-7 col-sm-12 order-0 order-md-1 bg-light text-dark">
+        <div class="move-down bg-light shadow-lg p-3">
 
 
           <div class="row">
             <div class="col-1 offset-1"><i class="fas fa-globe-americas fa-2x"></i></div>
-            <div class="col-8">
-              <h5 class="py-2">Globally sourced single origin coffee</h5>
+            <div class="col-10">
+              <h5 class="py-2 ml-3">Globally sourced single origin coffee</h5>
             </div>
-            <div class="col-2"></div>
+
 
           </div>
           <div class="row">
@@ -93,10 +100,9 @@
               <i class="fas fa-hands-helping fa-2x"></i>
 
             </div>
-            <div class="col-8">
-              <h5 class="py-2">Free trade with international farmers</h5>
+            <div class="col-10">
+              <h5 class="py-2 ml-3">Free trade with international farmers</h5>
             </div>
-            <div class="col-2"></div>
 
           </div>
 
@@ -105,11 +111,10 @@
               <i class="fas fa-mug-hot fa-2x"></i>
 
             </div>
-            <div class="col-8">
-              <h5 class="py-2">SCAA Gold Cup certified</h5>
+            <div class="col-10">
+              <h5 class="py-2 ml-3">SCAA Gold Cup certified</h5>
 
             </div>
-            <div class="col-2"></div>
 
           </div>
           <div class="row">
@@ -117,64 +122,72 @@
               <i class="fab fa-pagelines fa-2x"></i>
 
             </div>
-            <div class="col-8">
-              <h5 class="py-2">Bean to cup</h5>
+            <div class="col-10">
+              <h5 class="py-2 ml-3">Bean to cup</h5>
 
             </div>
-            <div class="col-2"></div>
 
           </div>
-          <div class="row pb-4">
+          <div class="row">
             <div class="col-1 offset-1">
               <i class="fas fa-hand-holding-water fa-2x"></i>
 
 
             </div>
-            <div class="col-8">
-              <h5 class="py-2">Zero waste</h5>
+            <div class="col-10">
+              <h5 class="py-2 ml-3">Zero waste</h5>
 
 
             </div>
-            <div class="col-2"></div>
           </div>
         </div>
       </div>
     </div>
+
     <div class="row">
-      <div class="col-md-4 latte-img "></div>
-      <div class="col-8">
-        <article class="p-5 text-dark">
-          <div class="d-flex">
-            <i class="fas fa-rainbow fa-3x"></i>
-            <h1 class="pl-3 mt-2">We make dreams come true.</h1>
+      <div class="col-md-4 latte-img">
+
+      </div>
+      <div class="col-md-8 col-12 text-dark">
+        <div class="row pt-5">
+          <div class="col-1 offset-1"><i class="fas fa-rainbow fa-3x"></i></div>
+          <div class="col-10">
+            <h1 class="pl-5 mt-2">Dreams come true.</h1>
           </div>
-          <h1>Seriously.</h1>
-          <p class="pt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis quod perspiciatis nisi numquam
+        </div>
+        <div class="row">
+          <h1 class="col-10 offset-1">Seriously.</h1>
+        </div>
+        <div class="row">
+          <div class="col-1"></div>
+          <p class="col-10 pt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis quod perspiciatis nisi
+            numquam
             culpa
             quaerat saepe. Repellendus asperiores iusto sunt doloremque debitis quam commodi numquam molestiae
             reprehenderit nemo! Expedita, nemo!</p>
-        </article>
-        <div class="row">
-          <div class="col-md-8"></div>
-          <div class="col-md-4">
+          <div class="col-1"></div>
+        </div>
+
+        <div class="row pb-5">
+          <div class="col-md-8 col-6"></div>
+          <div class="col-md-4 col-6">
             <button class="btn btn-dark">Read more</button>
           </div>
         </div>
       </div>
     </div>
     <div class="row bg-light">
-      <div class="col-md-4 col-sm-12 d-flex justify-content-center p-5">
-        <div class="card text-dark text-center p-5 my-auto shadow rounded">
+      <div class="col-md-4 col-sm-12 order-1 order-md-0 d-flex justify-content-center p-5">
+        <div class="card center-container text-dark text-center p-5 my-auto shadow rounded">
           <blockquote class="blockquote">
-            <p>"This is the best cup of coffee you can get in the Treasure Valley."
-            </p>
-            <h3>-</h3>
-            <h5>Idaho Press</h5>
+            "This is the best cup of coffee you can get in the Treasure Valley."
           </blockquote>
+          <h3>-</h3>
+          <h5>Idaho Press</h5>
         </div>
       </div>
-      <div class="col-md-4 col-sm-12 d-flex justify-content-center py-4">
-        <div class="card text-dark text-center p-5 m-2 shadow-lg rounded">
+      <div class="col-md-4 col-sm-12 order-0 order-md-1 d-flex justify-content-center py-4">
+        <div class="card center-container text-dark text-center p-5 m-2 shadow-lg rounded">
           <div class="d-flex mx-auto pb-3">
 
             <i class="fas fa-star"></i>
@@ -184,32 +197,32 @@
             <i class="fas fa-star-half"></i>
           </div>
           <blockquote class="blockquote">
-            <p>"The <strong>craft</strong> and <strong>philosophy</strong> is this place is unparalled. You need to go
-              there, now."
-            </p>
-            <h3>-</h3>
-            <h5>SCAA</h5>
+            "The <strong>craft</strong> and <strong>philosophy</strong> in this place is unparalled. You need to go
+            there, now."
           </blockquote>
+
+          <h3>-</h3>
+          <h5>SCAA</h5>
 
         </div>
       </div>
-      <div class="col-md-4 col-sm-12 d-flex justify-content-center p-5">
-        <div class="card text-dark text-center p-5 my-auto shadow rounded">
+      <div class="col-md-4 col-sm-12 order-2 order-md-2 d-flex justify-content-center p-5">
+        <div class="card center-container text-dark text-center p-5 m-auto shadow rounded">
 
 
           <blockquote class="blockquote">
-            <p>"Finally, good coffee!"
-            </p>
-            <h3>-</h3>
-            <h5>Boise Weekly</h5>
+            "Finally, good coffee!"
           </blockquote>
+
+          <h3>-</h3>
+          <h5>Boise Weekly</h5>
 
         </div>
       </div>
     </div>
     <div class="row beans-img">
       <div class="col-12">
-        <div class="text-light m-auto p-5">
+        <div class="text-light m-auto p-5" id="hello">
           <h1>Come say hello.</h1>
           <p>
             Zero Coffee Co. is committed to providing you with the best service, tastiest coffee, and zero nonsense.
